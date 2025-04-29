@@ -8,12 +8,11 @@ html {
 
 body {
     font-size: 1.6rem;
-    letter-spacing: 2px;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
 }
 
 .wrapper {
+    letter-spacing: 2px;
+    text-transform: uppercase;
     /* height: 100%; */
     padding: 100px;
     background: linear-gradient(to bottom, #4b4949, #2e2d2d);
@@ -61,14 +60,15 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.body-cv .mid{
+.body-cv .mid {
     font-weight: 700;
     font-size: 1.2rem;
 }
 
-.body-cv-left a{
+.body-cv-left a {
     text-decoration: none;
 }
+
 .body-cv .body-cv-left {
     background-color: #c9d4c9;
     width: 250px;
@@ -83,7 +83,7 @@ body {
     padding: 30px 13px 0 30px;
 }
 .title {
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     font-family: "Oswald", sans-serif;
     font-weight: 700;
 }
@@ -93,19 +93,15 @@ body {
 }
 
 .center {
-    
     height: 250px;
 }
 
 .bottom {
     height: 100px;
-    
-
 }
 
 .body-cv .body-cv-right {
     background-color: white;
-   
 }
 
 .wrap-body-right {
@@ -115,11 +111,164 @@ body {
     gap: 80px;
 }
 
-.wrap-body-right li::before{
+.wrap-body-right li::before {
     content: "• ";
     /* font-size: 2rem; */
 }
 .body-cv .paragraph {
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+/* pricing-flex */
+
+.wrapper-pricing {
+    background: linear-gradient(to bottom, #f1eaea, #f1e8e8);
+    height: 100vh;
+    padding: 80px;
+    font-size: 1.4rem;
+}
+
+.container-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    max-width: 1300px;
+    background-color: white;
+    height: 800px;
+}
+
+.header-pricing .monthly {
+    background-color: #f7f7f7;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.header-pricing button {
+    border: none;
+    cursor: pointer;
+    padding: 7px 20px;
+    background-color: #b3aaaa;
+    transition: linear 0.3s;
+    transition-property: background-color, color;
+}
+
+.header-pricing .monthly button:first-child {
+    background-color: transparent;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.header-pricing .btn-save {
+    font-weight: 800;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.btn-save span {
+    color: #4a9f63;
+}
+
+.header-pricing .monthly button:hover {
+    background-color: #b3aaaa;
+    color: white;
+}
+
+/* body pricing */
+.body-pricing {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    /* min-height: 400px; */
+    margin-top: 40px;
+}
+
+.body-pricing .package {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.body-pricing .package:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.body-pricing .package:nth-child(2) .price-sale .discount {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: 8px;
+    color: #707070;
+}
+.body-pricing .package:nth-child(2) {
+    position: relative;
+    outline: 2px solid orange;
+}
+.body-pricing .package:nth-child(2) .popular {
+    position: absolute;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid orange;
+    border-radius: 25px;
+    padding: 5px 15px;
+    top: -12px;
+    left: 88px;
+    background: #ffecbe;
+}
+
+.package .head-body {
+    display: flex;
+    flex-direction: column;
+}
+.package span {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.package span:first-child {
+    margin-bottom: 10px;
+}
+
+.head-body p:first-of-type,
+.head-body p:nth-of-type(2) {
+    margin-bottom: 18px;
+}
+
+.head-body .detail {
+    color: #707070;
+}
+
+.package .btn-package {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: color linear 0.3s, background-color linear 0.3s;
+}
+
+.package .btn-package:hover {
+    background-color: #4a9f63;
+    color: white;
+}
+
+.package .price::before {
+    content: "$";
+    font-size: 1.4rem;
+}
+
+.package li::before {
+    content: "✔ ";
+    color: #4a9f63;
+    font-size: 1.8rem;
+    margin-right: 5px;
 }
