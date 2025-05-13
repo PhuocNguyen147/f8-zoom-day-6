@@ -470,3 +470,23 @@ body {
 .register-right .btn-register .btn:hover {
     background-color: #2355df;
 }
+
+
+/* -------------frogyy-------------- */
+
+
+.froggy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.froggy img{
+    max-width: 1100px;
+}
+
+.froggy figcaption{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
