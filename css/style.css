@@ -3,11 +3,13 @@ html {
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
     font-size: 62.5%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
     font-size: 1.6rem;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -276,9 +278,7 @@ body {
 
 /* product - list */
 
-
 .wrapper-product {
-   
     display: flex;
 
     justify-content: center;
@@ -369,4 +369,104 @@ body {
 .btn-buy-product a:hover {
     color: white;
     background-color: #c3d422;
+}
+
+/*----------------------register--------------------- */
+
+.wrapper-register {
+    background: linear-gradient(to right, #ec7e99, #fbdd65);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-register {
+    display: flex;
+    min-width: 750px;
+}
+
+.register-left .img-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url(../img/img-regester.jpg) no-repeat center left / cover
+        content-box;
+    width: 300px;
+    padding: 40px 0;
+    height: 500px;
+}
+
+.register-left {
+    color: white;
+}
+
+.register-left h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.register-left strong::after {
+    content: "";
+    margin: 10px 0;
+    display: block;
+    border-bottom: 0.8px solid white;
+}
+
+.register-right {
+    flex: 1;
+    background: rgb(243, 241, 241);
+    border: 1px solid #ddd7d7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    padding: 30px 40px;
+}
+
+.register-right .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-right .form-label {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 25px 0 5px 0;
+}
+
+.register-right .form-group input {
+    width: 100%;
+    padding: 6px 8px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a8a7a7;
+    color: #240303;
+    font-weight: 500;
+    background-color: inherit;
+}
+
+.register-right .btn-register {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.register-right .btn-register .btn {
+    background-color: #4b74e4;
+    min-width: 130px;
+    padding: 5px 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.register-right .btn-register .btn:hover {
+    background-color: #2355df;
 }
