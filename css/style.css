@@ -185,6 +185,7 @@ body {
     max-width: 1000px;
     /* min-height: 400px; */
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .body-pricing .package {
@@ -220,7 +221,7 @@ body {
     border: 1px solid orange;
     border-radius: 25px;
     padding: 5px 15px;
-    top: -12px;
+    top: -16px;
     left: 88px;
     background: #ffecbe;
 }
@@ -271,4 +272,101 @@ body {
     color: #4a9f63;
     font-size: 1.8rem;
     margin-right: 5px;
+}
+
+/* product - list */
+
+
+.wrapper-product {
+   
+    display: flex;
+
+    justify-content: center;
+}
+
+.container-product {
+    --columns: 4;
+    --spacing: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.product-items {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / var(--columns)) - var(--spacing));
+    /* height: 420px; */
+    margin-left: var(--spacing);
+    margin-top: var(--spacing);
+    padding: 10px 0;
+    border-radius: 10px;
+    outline: 1px solid #ccc;
+    background-color: white;
+}
+
+.product-items:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-items .img-product {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.info-product .title-product {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #424442;
+}
+
+.info-product .config span {
+    background-color: #f2f4f7;
+    padding: 1px 6px;
+}
+
+.price-product {
+    /* margin-top: 10px; */
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #dd2f2c;
+}
+
+.price-product::after {
+    content: "₫";
+    font-size: 1.3rem;
+    vertical-align: super;
+}
+
+.btn-buy-product a {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    border: 1.5px solid #9fad1a;
+    border-radius: 5px;
+    text-decoration: none;
+    min-width: 70px;
+    padding: 5px 10px;
+    background-color: #eeec81;
+}
+
+.btn-buy-product a:hover {
+    color: white;
+    background-color: #c3d422;
 }
